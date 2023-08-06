@@ -1,7 +1,7 @@
 //prob1: elti array te koyekti duplicate item takbe, duplicate item er object hisabe tar songka return korte hobe
 /*
 const fruits=["mango","pineaple","jack","mango","avocado","jack","mango","avacado","pineaple","avacado",]
-return hobe {mango:3,pineaple:2,jack:2, avacado:3}
+output= {mango:3,pineaple:2,jack:2, avacado:3}
 
 array er item gulu key hisabe bebohrito hobe
 key er value hobe duplicate item er sathe 1+
