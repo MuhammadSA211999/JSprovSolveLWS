@@ -8,14 +8,34 @@ const add=(x)=>{
     return x+10
 }
 
-//memoFunc ekti HOF
-const memoFunc=(func)=>{
-    //closure area
-    return function(){
+//memoFunc ekti HOF, zeti closure functionality use kore
+const memoFunc=(addFunc)=>{
+              //add()
 
-    }
+    //closure area
+  let cachedData={}
+
+   //calculate function start
+   return function(x){
+        //calculate funct()
+         
+        // console.log(cachedData); //{10: 20}
+        
+        if(cachedData[x]){
+            console.log('Return from cached');
+            return cachedData[x] //ekhan value return kora hoyeche
+        }
+        else{
+            console.log('return from calculate');
+            const result=addFunc(x)
+            cachedData[x]=result
+            return result
+            }
+           }
+        //    calculate function end
 }
 
 const calculate=memoFunc(add)
-console.log(calculate)
+console.log(calculate(10))
+console.log(calculate(10))
 
