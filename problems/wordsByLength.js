@@ -15,3 +15,6 @@ const sortingWordsByLength=(text)=>{
 
 const sortedSentence=sortingWordsByLength(sentance)
 console.log(sortedSentence);  //['a', 'is', 'Java', 'language', 'programming']
+//in lone line descending order
+const sortedText=sentance.split(" ").sort((a,b)=>b.length-a.length)
+console.log(sortedText)
