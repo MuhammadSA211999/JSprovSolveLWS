@@ -4,3 +4,7 @@ const sentance="Java is a programming language"
 output sortSentence="a is Java language programming"
 */
 const sentance="Java is a programming language"
+
+const sortingWordsByLength=(text)=>{
+    const wordsArray=text.split(' ')
+}
